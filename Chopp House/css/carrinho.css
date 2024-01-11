@@ -1,0 +1,19 @@
+.container-carrinho {
+	margin: 20px;
+	padding: 10px;
+}
+
+.thead-table-carrinho {
+	background-color: #1a1a1a;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.fa-trash-alt {
+	font-size: 25px;
+	color: red;
+}
+
+input[type="checkbox"], input[type="checkbox"]+label{
+  cursor:pointer;
+}

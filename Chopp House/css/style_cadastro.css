@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url("../img/BG.png") no-repeat center;
+	margin: 0;
+}
+
+.section-cadastro {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.campos-cadastro
+{
+	margin: 10px;
+	padding: 20px;
+	font-family: sans-serif;
+	border: 1px solid;
+}
+
+.campos-cadastro form 
+{
+	width: 500px;
+	margin: auto;
+}
+
+.campos-cadastro input,a { outline: none; text-decoration: none;	}
+
+.campos-cadastro label
+{
+	margin: 10px auto;
+	padding: 5px;
+	font-size: 18px;
+	color: #000;
+}
+
+.campos-cadastro input 
+{
+	width: 200px;
+	height: 30px; 
+	margin-bottom: 5px;
+	padding: 5px;
+	font-size: 14px;
+	color: #000;
+	letter-spacing: 1px;
+	border: 1px solid;
+	background: transparent;
+}
+
+.campos-cadastro .invalid
+{
+	display: none;
+	color: #ff1a1a;
+}
+
+.campos-cadastro .link-google
+{	
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.campos-cadastro .div-senhas
+{
+	display: flex;
+}
+
+.campos-cadastro .div-senha,.div-confirma-senha 
+{
+	display: block;
+}
+
+.campos-cadastro input[name="cadastrar"]
+{
+	width: 100px;
+	height: 30px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: transparent;
+	cursor: pointer;
+	display: block;
+}

@@ -1,0 +1,16 @@
+.container-lista-cliente legend
+{
+	margin: 0 10px;
+	padding: 0; 
+	font-size: 32px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.container-lista-cliente
+{
+	margin: 20px;
+	padding: 10px;
+	/*border: 1px solid;*/
+}

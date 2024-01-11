@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: initial;
+  font-size: 18px;
+}
+
+#title,
+#title img { 
+  width: 100%;
+  height: 200px;
+  background-size: cover; 
+}
+
+.cabecalho {
+  min-width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: rgb(0, 0, 0, 1);
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  z-index: 90;
+}
+
+.container-cabecalho {
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divMenu {
+  flex: 1.3;
+  display: flex;
+}
+
+#icon-chopp {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#icon-chopp img {
+  width: 35px;
+  height: 40px;
+}
+
+nav ul, 
+nav li 
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  height: 50px;
+}
+
+.menu-opcao a {
+  padding: 13px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'FreeMono';
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.menu-opcao li:hover { border-bottom: 3px solid #f4f443; }
+
+.menu-opcao li:hover a { color: #f4f443; }
+
+.menu-opcao ul li #btnVenda 
+{
+  width: 70px;
+}
+
+.menu-opcao ul li #btnCliente 
+{
+  width: 90px;
+}
+
+.divBCL {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-busca {
+  width: 30px;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.div-busca form {
+  border: none;
+}
+
+fieldset { border: none; }
+
+#search {
+  width: 20px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.7s linear; 
+}
+
+#icon-search 
+{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.div-IconCar {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.div-IconCar a {
+  display: block;
+  padding: 2px 5px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 24px;
+  cursor: pointer;
+} 
+
+#div-btnlogin {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*--------menu para smartphone--------*/
+.btn_menu_mobile {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  color: #fff; 
+  font-size: 30px;
+  display: none;
+  outline: none;
+}
+
+#icon_btn_menu {
+  cursor: pointer;
+}
+
+/*#icon_menu {
+  height: 50px;
+  padding-top: 0px;
+  cursor: pointer;
+  border: solid 1px white;
+}*/
+
+/*.menu {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  font-family: "Arial";
+  display: none;
+}
+
+.menu ul{
+  list-style: none;
+  position: relative;
+}
+
+.menu ul li {
+  width: 120px;
+  float: left
+}
+
+.menu a {
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu ul li:hover ul {
+  visibility: visible;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #222;  
+}
+
+.menu ul ul li {
+  float: none;
+  border-bottom: solid 1px #ccc;
+  background-color: 
+}
+
+.menu ul ul li a {
+  background-color: #069;
+}*/
+
+@media only screen and (max-width: 600px){ 
+  .container-cabecalho { 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  #div-btnlogin, .div-busca {
+    display: none;
+  }
+
+  .btn_menu_mobile {
+    display: block;
+  }
+
+  .divMenu {
+    flex: 5;
+  }
+
+  /*.menu {
+    margin-left: -100%;
+    transition: all .4s;
+    display: block;
+  }
+
+  .menu ul li {
+    width: 100%;
+    float: none;
+  }
+
+  .menu ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s; 
+  }
+
+  .menu ul li:hover ul { 
+    height: auto;
+    max-height: 200px;
+  }*/
+}
