@@ -1,7 +1,7 @@
 <?php
 include('carrinho.php');
 $compraFinal = $total;
-$compraFinal = number_format($total, 5, ',', '.');x
+$compraFinal = number_format($total, 5, ',', '.');
 
 #Finaliza compra
 if(isset($_POST['teleEntrega'])){
